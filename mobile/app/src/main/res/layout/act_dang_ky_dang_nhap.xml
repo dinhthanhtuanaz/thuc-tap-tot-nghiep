@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DangKyDangNhapAct">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_130">
+        <ImageView
+            android:id="@+id/iv_close"
+            android:src="@drawable/bg_dang_nhap"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/ic_close"
+            android:layout_margin="@dimen/d_15"
+            android:tint="@color/colorWhite"
+            android:layout_width="@dimen/d_30"
+            android:layout_height="@dimen/d_30" />
+    </FrameLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_dang_nhap"
+        app:tabTextAppearance="@style/CustomTextAppearanceTab"
+        app:tabIndicatorColor="@color/cYellow6"
+        app:tabIndicatorHeight="@dimen/d_5"
+        android:background="@color/cGray2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_dang_nhap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

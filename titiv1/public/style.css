@@ -1,0 +1,285 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	color:#222;
+}
+img{
+	max-width:100%;
+}
+.mr-2{
+	margin-right: 2px;
+}
+.bg-main{
+	background-color: #3c8dbc;
+}
+.pagination--text{
+	    border-radius: 5px;
+    overflow: hidden;
+    margin-top: .2rem;
+    display: inline-block;
+}
+.pagination--text input {
+    width: 30px;
+    text-align: center;
+    border: 0;
+    padding: .4rem 0;
+}
+.pagination--text *{
+	border-radius: 0;
+}
+.pagination--text span {
+    width: 25px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0.4rem 0;
+}
+#main{
+	display: flex;
+	padding-top: 50px;
+	background: red;
+}
+#main .sidebar{
+	width: 220px;
+	height: 100%;
+	position: fixed;
+	background-color: #fff;
+
+}
+.header{
+	position: fixed;
+	width: 100%;
+    /* background-color: #3c8dbc; */
+    background-color: #006cf0;
+	height: 50px;
+	display: flex;
+	justify-content:space-between;
+	/*align-items: center;*/
+	z-index: 999;
+	padding-left: 1rem;
+}
+#main #block-center{
+	margin-left: 220px;
+	width: 100%;
+
+}
+#main #inner-center{
+	min-height: 100vh;
+  padding: 1rem 1rem 40px 1rem;
+  padding-top: 1rem;
+  background-color: #eee;
+}
+#inner-center > div{
+
+}
+#inner-footer{
+	height: 40px;
+    position: fixed;
+    width: calc(100% - 220px);
+    bottom: 0;
+    text-align: center;
+    line-height: 40px;
+}
+
+/*============HEADER============*/
+.header-brand{
+	display: flex;
+	align-items: center;
+}
+.header-brand img{
+	width: 35px;
+	height: 35px;
+}
+.header-brand h1{
+	font-size: 1.4rem;
+	margin-bottom: 0;
+	color:#fff;
+	padding-left: .8rem;
+}
+.header-account{
+	color:#fff;
+	padding-right: 1.3rem;
+}
+.header-account-name h6{
+	line-height: 50px;
+	cursor: pointer;
+	font-weight: 400;
+}
+.header-account-name h6 span{
+	margin-left: .4rem;
+	margin-right: .4rem;
+
+}
+.header-account-control i{
+	margin-right: .5rem;
+}
+
+/*============SIDEBAR============*/
+.sidebar-tree{
+	font-size: 1rem;
+}
+.sidebar-tree > .treeview a{
+	border-bottom: 1px solid #ccc;
+}
+.treeview{
+	position: relative;
+}
+.treeview a{
+	cursor: pointer;
+	display: block;
+	color:#222;
+}
+.treeview a i:last-child{
+	float: right;
+	margin-right: .5rem;
+	 margin-top: 0.7rem;
+}
+.treeview a i:first-child{
+	margin-left: .7rem;
+}
+.treeview a span{
+	display: inline-block;
+	padding-left: .6rem;
+}
+.treeview-menu{
+	display: none;
+}
+.treeview-menu a{
+	padding-left: 2.5rem;
+
+}
+.sidebar-tree .treeview{
+	line-height: 2.5rem;
+}
+.toggle-rotate{
+	transition: .3s;
+}
+.toggle-rotate--active{
+	transform: rotate(90deg);
+}
+
+.sidebar-avt{
+	border-radius: 50%;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+}
+.sidebar-header{
+	display: flex;
+	padding-left: 1rem;
+	margin:.5rem 0;
+}
+.sidebar-header h6{
+	padding-top: .8rem;
+	padding-left: .5rem;
+}
+
+/*============CONTENT============*/
+.content-title{
+	display: flex;
+	align-items: center;
+}
+.content-title > * {
+	margin-bottom: 1rem;
+}
+.content-title__subname{
+	margin-left: 1rem;
+}
+
+.action-group a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	margin-right: 3px;
+}
+.action-group{
+	width: 125px;
+    text-align: center;
+}
+.action-group a i{
+	    font-size: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.table td, .table th{
+	padding:.5rem;
+}
+
+.content__header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#loginform{
+	width: 500px;
+  padding: 2rem;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  box-shadow: 0 1px 25px rgba(0,0,0,.1);
+}
+
+#wrapper.login header,#wrapper.login footer{
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	background-color: #3c8dbc;
+}
+#wrapper.login footer{
+	bottom: 0;
+}
+
+
+.table.table-res td, .table.table-res th{
+	width: 50px;
+	vertical-align: middle;
+	text-align: center;
+}
+.table.table-res p{
+	margin-bottom: 0;
+}
+.table.table-res a.btn i{
+	margin-right: 5px;
+}
+/* ===Style more, create by 25/02/2020=== */
+#search-form{
+    position: relative;
+
+}
+#search-form input{
+    box-shadow: none;
+}
+#search-form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 45px;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.btn-custom-1{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.fs-24{
+    font-size: 24px;
+}
+.width-110{
+    width: 110px;
+}
+.width-45{
+    width: 45px;
+}
+

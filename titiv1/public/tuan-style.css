@@ -1,0 +1,83 @@
+/* #wrap-content {
+    display: block;
+    padding: 15px;
+    padding-top: 0;
+} */
+
+#wrap-content table{
+	background: #fff;
+}
+.wrap-content_head {
+    /* margin-top: 15px; */
+    margin-bottom: 15px;
+}
+.pagination{
+    margin-top: 0;
+}
+.pagination-center .pagination{
+    justify-content: center;
+}
+.row-three{
+    overflow: hidden;
+    line-height: 20px;
+    max-height: 60px;
+}
+.link-logo{
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    font-weight: 800;
+}
+.link-logo:hover{
+    text-decoration: none;
+}
+table{
+    background: white !important;
+}
+
+/*Style for module Statistical*/
+.count-item {
+    display: flex;
+    height:70px;
+}
+.count-item .fas{
+    line-height: 70px;
+    font-size: 22px;
+    color: #fff;
+}
+.count-item .count-item-icon{
+    line-height: 70px;
+    text-align: center;
+}
+.count-item-text{
+    padding:5px;
+    background-color: #fff;
+}
+.count-item-text a{
+    font-weight: 700;
+}
+.count-wrapper{
+    /* background-color: #eee; */
+}
+.table-wrapper{
+    /* background-color: #eee; */
+    margin-top: 25px;
+}
+#myChart{
+    background: #fff;
+}
+
+/* ===Style for Login Page=== */
+#login {
+    position: fixed;
+    width: 470px;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#login form{
+    padding: 70px;
+    padding-top: 30px;
+}

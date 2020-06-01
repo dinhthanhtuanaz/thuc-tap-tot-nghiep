@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.QuenMatKhauAct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbar_quen_mk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cBlue5"
+            app:navigationIcon="@drawable/ic_back_white"
+            app:titleTextColor="@color/colorWhite"></androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_quen_mk"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/d_20" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d_20"
+        android:paddingRight="@dimen/d_20">
+
+        <EditText
+            android:id="@+id/edt_tai_khoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_20"
+            android:hint="@string/txt_email_phone" />
+
+        <Button
+            android:id="@+id/bt_lay_mk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_56"
+            android:layout_marginTop="@dimen/d_20"
+            android:background="@color/cRedA4"
+            android:text="@string/txt_lay_mk"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/d_20"
+            android:textStyle="normal" />
+
+        <TextView
+            android:text="@string/txt_nhac_nho_lay_mk"
+            android:textSize="@dimen/d_14"
+            android:textColor="@color/cGray9"
+            android:layout_marginTop="@dimen/d_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

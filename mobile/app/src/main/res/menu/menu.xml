@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_gio_hang"
+        android:title="Giỏ hàng"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_cart"/>
+    <item android:id="@+id/menu_tien_ich"
+        android:title="Tiện ích khác"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_more_dot">
+        <menu>
+            <item android:id="@+id/menu_trang_chu"
+                android:title="Trang chủ"
+                android:iconTint="@color/colorBlack"
+                android:icon="@drawable/ic_home"/>
+            <item android:id="@+id/menu_danh_muc"
+                android:title="Danh mục"
+                android:iconTint="@color/colorBlack"
+                android:icon="@drawable/ic_4_square"/>
+            <item android:id="@+id/menu_ca_nhan"
+            android:title="Cá nhân"
+            android:iconTint="@color/colorBlack"
+            android:icon="@drawable/ic_user2"/>
+            <item android:id="@+id/menu_yeu_thich"
+                android:title="Yêu thích"
+                android:iconTint="@color/colorBlack"
+                android:icon="@drawable/ic_heart"/>
+        </menu>
+    </item>
+</menu>

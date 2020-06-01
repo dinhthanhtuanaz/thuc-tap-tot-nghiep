@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/ln_product_acc"
+    android:paddingTop="@dimen/d_10"
+    android:paddingLeft="@dimen/d_10"
+    android:layout_marginTop="@dimen/d_10"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_hinh_sp"
+        android:src="@drawable/san_pham"
+        android:layout_marginRight="@dimen/d_20"
+        android:layout_width="@dimen/d_130"
+        android:layout_height="@dimen/d_130" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_ten_sp"
+            android:text="Sách Nói ít lại làm nhiều hơn"
+            android:textSize="@dimen/d_18"
+            android:textColor="@color/cGray9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_gia_sp"
+            android:text="341.000 đ"
+            android:textSize="@dimen/d_20"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

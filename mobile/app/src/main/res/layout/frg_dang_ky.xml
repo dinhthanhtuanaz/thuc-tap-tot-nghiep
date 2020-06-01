@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DangKyDangNhapAct">
+
+    <ScrollView
+        android:paddingLeft="@dimen/d_20"
+        android:paddingRight="@dimen/d_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edt_ho_ten"
+                android:layout_marginTop="@dimen/d_20"
+                android:hint="@string/txt_ho_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edt_so_dien_thoai"
+                android:layout_marginTop="@dimen/d_20"
+                android:hint="@string/txt_so_dien_thoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_marginTop="@dimen/d_20"
+                android:hint="@string/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/d_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_mat_khau"
+                    android:inputType="textPassword"
+                    android:hint="@string/txt_mat_khau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_hien_mk"
+                    android:text="@string/txt_hien"
+                    android:padding="@dimen/d_5"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/d_14"
+                    android:textColor="@color/cBlue5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/g_rdb_gioi_tinh"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/d_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rdb_nam"
+                    android:textSize="@dimen/d_20"
+                    android:buttonTint="@color/cBlue5"
+                    android:checked="true"
+                    android:text="@string/txt_gt_nam"
+                    android:layout_marginRight="@dimen/d_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rdb_nu"
+                    android:textSize="@dimen/d_20"
+                    android:buttonTint="@color/cBlue5"
+                    android:text="@string/txt_gt_nu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edt_ngay_sinh"
+                android:layout_marginTop="@dimen/d_20"
+                android:hint="@string/txt_ngay_sinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/chb_nhan_email"
+                android:buttonTint="@color/cBlue5"
+                android:textColor="@color/cGray9"
+                android:text="@string/txt_nhan_email"
+                android:layout_marginTop="@dimen/d_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_dang_ky"
+                android:text="@string/txt_dang_ky"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:layout_marginTop="@dimen/d_20"
+                android:textSize="@dimen/d_20"
+                android:background="@color/cRedA4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_56" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

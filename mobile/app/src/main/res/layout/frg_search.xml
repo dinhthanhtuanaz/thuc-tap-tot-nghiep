@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/cGray2"
+    android:padding="@dimen/d_20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edt_tim_kiem"
+        android:hint="@string/txt_ban_tim_gi"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/d_10"
+        android:textSize="@dimen/d_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_tim_kiem"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/d_10"
+        android:background="@color/cRedA4"
+        android:textSize="@dimen/d_18"
+        android:text="@string/txt_tim_kiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:padding="@dimen/d_10"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/d_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+        android:textSize="@dimen/d_18"
+        android:textColor="@color/cGray9"
+        android:text="@string/txt_lich_su_tim_kiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_xoa_lich_su"
+            android:textSize="@dimen/d_18"
+            android:textColor="@color/cBlue5"
+            android:text="@string/txt_xoa_lich_su"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tim_kiem"
+        android:layout_marginTop="@dimen/d_10"
+        android:padding="@dimen/d_10"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

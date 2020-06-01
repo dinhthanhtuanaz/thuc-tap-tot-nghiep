@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/d_20"
+    android:paddingRight="@dimen/d_20"
+    tools:context=".Activities.DangKyDangNhapAct">
+
+    <EditText
+        android:id="@+id/edt_tai_khoan"
+        android:layout_marginTop="@dimen/d_20"
+        android:hint="@string/txt_email_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/d_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_mat_khau"
+            android:inputType="textPassword"
+            android:hint="@string/txt_mat_khau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_hien_mk"
+            android:text="@string/txt_hien"
+            android:padding="@dimen/d_5"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/d_14"
+            android:textColor="@color/cBlue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_dang_nhap"
+        android:text="@string/txt_dang_nhap"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:layout_marginTop="@dimen/d_20"
+        android:textSize="@dimen/d_20"
+        android:background="@color/cRedA4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_56" />
+
+    <TextView
+        android:id="@+id/tv_quen_mk"
+        android:text="@string/txt_quen_mk"
+        android:textSize="@dimen/d_14"
+        android:textColor="@color/cBlue5"
+        android:layout_marginTop="@dimen/d_20"
+        android:paddingLeft="@dimen/d_5"
+        android:paddingRight="@dimen/d_5"
+        android:paddingBottom="@dimen/d_5"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

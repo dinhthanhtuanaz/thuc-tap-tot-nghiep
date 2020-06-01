@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản Lý Giảng Dạy</title>
+  <link href="./libs/fonts/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="./libs/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<div id="wrapper">
+  <header class="header" id="header">
+    <div class="header-brand"><img src="images/logo-haui-size.png" alt="logo">
+      <h1>Quản Lý Giảng Dạy</h1>
+    </div>
+    <div class="dropdown show header-account">
+      <div class="header-account-name" id="dropdownMenuLink" data-toggle="dropdown">
+        <h6><i class="fas fa-user"></i><span>Kenny Phong</span><i class="fas fa-caret-down"></i></h6>
+      </div>
+      <div class="dropdown-menu header-account-control" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="user-edit.html"><i class="fas fa-user-cog"></i><span>Cài đặt</span></a><a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></a></div>
+    </div>
+  </header>
+  <!-- end HEADER-->
+  <main class="main" id="main">
+    <aside class="sidebar" id="sidebar">
+      <nav>
+        <div class="sidebar-header">
+          <div class="sidebar-avt"><img src="images/avt.jpg" alt="avatar"></div>
+          <h6>Xin chào ADMIN</h6>
+        </div>
+        <ul class="sidebar-tree list-inline">
+          <li class="treeview"><a href=""><i class="fas fa-chart-line"></i><span>Thống kê dữ liệu</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline">
+              <li><a href="">Cơ bản</a></li>
+              <li><a href="">Nâng cao</a></li>
+            </ul>
+          </li>
+          <li class="treeview"><a href=""><i class="fas fa-calendar-check"></i><span>Đăng ký phòng TH</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline">
+              <li><a href="">Danh sách</a></li>
+              <li><a href="phong-thuc-hanh-dang-ky.html">Lịch biểu phòng TH</a></li>
+            </ul>
+          </li>
+          <li class="treeview"><a href=""><i class="fas fa-book"></i><span>Quản lý môn học</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline">
+              <li><a href="subject-list.html">Danh sách</a></li>
+              <li><a href="subject-add.html">Thêm</a></li>
+            </ul>
+          </li>
+          <li class="treeview"><a href=""><i class="fas fa-database"></i><span>Quản lý lớp học</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline">
+              <li><a href="class-list.html">Danh sách</a></li>
+              <li><a href="class-add.html">Thêm</a></li>
+            </ul>
+          </li>
+          <li class="treeview"><a href=""><i class="fas fa-user-tie"></i><span>Quản lý giảng viên</span><i class="fas fa-chevron-right toggle-rotate"></i></a>
+            <ul class="treeview-menu list-inline">
+              <li><a href="teacher-list.html">Danh sách</a></li>
+              <li><a href="teacher-add.html">Thêm</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- end SIDEBAR-->
+    <section class="block-center" id="block-center">
+      <div class="inner-center" id="inner-center">
+        <h1>OK Ròi</h1>
+      </div>
+      <!-- <div id="inner-footer" class="bg-main"><p>Design by Dấu Tên</p></div>-->
+    </section>
+    <!-- end CONTENT-->
+  </main>
+  <footer></footer>
+  <!-- <img src="images/demo1.png" alt="" style="margin-top: 1000px; margin-left: 500px;">-->
+</div>
+<script src="./libs/jquery/jquery-2.2.4.js"></script>
+<script src="./libs/jquery/popper.min.js"></script>
+<script src="./libs/bootstrap/bootstrap.min.js"></script>
+<script src="script.js"></script>

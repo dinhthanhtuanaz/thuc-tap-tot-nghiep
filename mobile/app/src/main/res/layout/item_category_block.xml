@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/d_10"
+    android:layout_marginTop="@dimen/d_10"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_ten_dm"
+        android:text="Bách Hóa Online"
+        android:textSize="@dimen/d_22"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_hinh_nen_dm"
+        android:src="@drawable/bg_nha_sach"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_130" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_san_pham"
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>

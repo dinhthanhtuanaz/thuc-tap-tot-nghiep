@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ThanhToanAct">
+    <RelativeLayout
+        android:background="@color/cBlue5"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbar_thanh_toan"
+        app:navigationIcon="@drawable/ic_back_white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_thanh_toan"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/d_20" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/d_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/txt_so_dien_thoai"
+            android:textColor="@color/cGray9"
+            android:textSize="@dimen/d_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_so_dien_thoai"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/txt_dia_chi_giao"
+            android:textColor="@color/cGray9"
+            android:layout_marginTop="@dimen/d_10"
+            android:textSize="@dimen/d_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_dia_chi_giao"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/txt_ghi_chu"
+            android:layout_marginTop="@dimen/d_10"
+            android:textColor="@color/cGray9"
+            android:textSize="@dimen/d_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_ghi_chu"
+            android:textAlignment="textStart"
+            android:minLines="3"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_xac_nhan"
+            android:text="@string/txt_xac_nhan"
+            android:textColor="@color/colorWhite"
+            android:background="@color/cRedA4"
+            android:textAllCaps="false"
+            android:textSize="@dimen/d_20"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

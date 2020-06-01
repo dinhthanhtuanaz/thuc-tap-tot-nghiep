@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fr_home_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <TableRow
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <LinearLayout
+            android:id="@+id/ln_trang_chu"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_trang_chu"
+                android:src="@drawable/ic_home"
+                android:layout_width="@dimen/d_32"
+                android:layout_height="@dimen/d_32" />
+            <TextView
+                android:id="@+id/tv_trang_chu"
+                android:text="@string/txt_trang_chu"
+                android:textSize="@dimen/d_12"
+                android:layout_marginTop="@dimen/d_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_danh_muc"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_danh_muc"
+                android:src="@drawable/ic_4_square"
+                android:layout_width="@dimen/d_32"
+                android:layout_height="@dimen/d_32" />
+            <TextView
+                android:id="@+id/tv_danh_muc"
+                android:text="@string/txt_danh_muc"
+                android:textSize="@dimen/d_12"
+                android:layout_marginTop="@dimen/d_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_tim_kiem"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_tim_kiem"
+                android:src="@drawable/ic_search2"
+                android:layout_width="@dimen/d_32"
+                android:layout_height="@dimen/d_32" />
+            <TextView
+                android:id="@+id/tv_tim_kiem"
+                android:text="@string/txt_tim_kiem"
+                android:textSize="@dimen/d_12"
+                android:layout_marginTop="@dimen/d_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_thong_bao"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_thong_bao"
+                android:src="@drawable/ic_bell"
+                android:layout_width="@dimen/d_32"
+                android:layout_height="@dimen/d_32" />
+            <TextView
+                android:id="@+id/tv_thong_bao"
+                android:text="@string/txt_thong_bao"
+                android:textSize="@dimen/d_12"
+                android:layout_marginTop="@dimen/d_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_ca_nhan"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_ca_nhan"
+                android:src="@drawable/ic_user2"
+                android:layout_width="@dimen/d_32"
+                android:layout_height="@dimen/d_32" />
+            <TextView
+                android:id="@+id/tv_ca_nhan"
+                android:text="@string/txt_ca_nhan"
+                android:textSize="@dimen/d_12"
+                android:layout_marginTop="@dimen/d_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </TableRow>
+</RelativeLayout>

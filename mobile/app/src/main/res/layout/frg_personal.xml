@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/cBlue5"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbar_ca_nhan"
+        app:navigationIcon="@drawable/ic_back_white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_ca_nhan"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/d_20" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/cGray2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rt_dang_ky_dang_nhap"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/d_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/fr_icon_user"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_circle"
+            android:layout_width="@dimen/d_56"
+            android:layout_height="@dimen/d_56">
+            <ImageView
+                android:src="@drawable/ic_user2"
+                android:layout_gravity="center"
+                android:tint="@color/colorWhite"
+                android:scaleType="centerInside"
+                android:layout_width="@dimen/d_30"
+                android:layout_height="@dimen/d_30" />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ln_thong_tin_1"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/fr_icon_user"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d_20"
+            android:paddingRight="@dimen/d_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/txt_chao_mung"
+                android:textSize="@dimen/d_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/txt_dang_nhap_dang_ky"
+                android:textSize="@dimen/d_20"
+                android:textColor="@color/cBlue5"
+                android:layout_marginTop="@dimen/d_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_thong_tin_2"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/fr_icon_user"
+            android:paddingLeft="@dimen/d_20"
+            android:paddingRight="@dimen/d_20"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_ten_user"
+                android:text="Đinh Thanh Tuân"
+                android:textColor="@color/cGray9"
+                android:textSize="@dimen/d_22"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_email_user"
+                android:text="dinhthanhtuanaz@gmail.com"
+                android:textSize="@dimen/d_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/txt_thanh_vien_tu"
+                    android:textSize="@dimen/d_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_ngay_tham_gia"
+                    android:text="18/07/2018"
+                    android:textSize="@dimen/d_18"
+                    android:paddingLeft="@dimen/d_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </LinearLayout>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_right_white"
+            android:tint="@color/cBlue5"
+            android:layout_width="@dimen/d_30"
+            android:layout_height="@dimen/d_30"/>
+    </RelativeLayout>
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:background="@color/colorWhite"
+         android:padding="@dimen/d_20"
+         android:layout_marginTop="@dimen/d_20"
+         android:layout_marginBottom="@dimen/d_10"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <RelativeLayout
+             android:id="@+id/rt_san_pham_da_mua"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/iv_ic_cart2"
+                 android:src="@drawable/ic_cart"
+                 android:layout_centerVertical="true"
+                 android:tint="@color/cGray6"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+             <TextView
+                 android:layout_toRightOf="@id/iv_ic_cart2"
+                 android:layout_centerVertical="true"
+                 android:text="@string/txt_san_pham_da_mua"
+                 android:paddingLeft="@dimen/d_15"
+                 android:textSize="@dimen/d_20"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+             <ImageView
+                 android:src="@drawable/ic_arrow_right_white"
+                 android:tint="@color/cBlue5"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:id="@+id/rt_san_pham_da_xem"
+             android:layout_marginTop="@dimen/d_10"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/iv_ic_eyes"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/ic_eye"
+                 android:tint="@color/cGray6"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+             <TextView
+                 android:layout_toRightOf="@id/iv_ic_eyes"
+                 android:layout_centerVertical="true"
+                 android:text="@string/txt_san_pham_da_xem"
+                 android:paddingLeft="@dimen/d_15"
+                 android:textSize="@dimen/d_20"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+             <ImageView
+                 android:src="@drawable/ic_arrow_right_white"
+                 android:tint="@color/cBlue5"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_marginTop="@dimen/d_10"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/iv_ic_heart"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/ic_heart"
+                 android:tint="@color/cGray6"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+             <TextView
+                 android:layout_toRightOf="@id/iv_ic_heart"
+                 android:layout_centerVertical="true"
+                 android:text="@string/txt_san_pham_yeu_thich"
+                 android:paddingLeft="@dimen/d_15"
+                 android:textSize="@dimen/d_20"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+             <ImageView
+                 android:src="@drawable/ic_arrow_right_white"
+                 android:tint="@color/cBlue5"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_marginTop="@dimen/d_10"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/iv_ic_flag"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/ic_flag"
+                 android:tint="@color/cGray6"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+             <TextView
+                 android:layout_toRightOf="@id/iv_ic_flag"
+                 android:layout_centerVertical="true"
+                 android:text="@string/txt_san_pham_mua_sau"
+                 android:paddingLeft="@dimen/d_15"
+                 android:textSize="@dimen/d_20"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+             <ImageView
+                 android:src="@drawable/ic_arrow_right_white"
+                 android:tint="@color/cBlue5"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_marginTop="@dimen/d_10"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/iv_ic_star"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/ic_star"
+                 android:tint="@color/cGray6"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+             <TextView
+                 android:layout_toRightOf="@id/iv_ic_star"
+                 android:layout_centerVertical="true"
+                 android:text="@string/txt_san_pham_da_danh_gia"
+                 android:paddingLeft="@dimen/d_15"
+                 android:textSize="@dimen/d_20"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+             <ImageView
+                 android:src="@drawable/ic_arrow_right_white"
+                 android:tint="@color/cBlue5"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_width="@dimen/d_30"
+                 android:layout_height="@dimen/d_30" />
+         </RelativeLayout>
+     </LinearLayout>
+    <Button
+        android:id="@+id/bt_dang_xuat"
+        android:text="@string/txt_dang_xuat"
+        android:layout_margin="@dimen/d_10"
+        android:textAllCaps="false"
+        android:textSize="@dimen/d_24"
+        android:textColor="@color/cBlue5"
+        android:background="@drawable/bg_button_outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
